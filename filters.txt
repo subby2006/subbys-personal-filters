@@ -17,5 +17,7 @@
 @@||dotomi.com 
 @@||openx.net
 @@||a-mo.net
+@@||criteo.com
+@@||scorecardresearch.com
 ! BLOCKLIST
 ||ad.flipboard.com^
