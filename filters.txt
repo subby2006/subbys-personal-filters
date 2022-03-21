@@ -1,0 +1,21 @@
+! ALLOWLIST
+@@||spotxchange.com
+@@||gumgum.com
+@@||rubiconproject.com
+@@||casalemedia.com
+@@||imrworldwide.com
+@@||pubmatic.com
+@@||adnxs.com
+@@||m1314.com
+@@||stats.g.doubleclick.net^$important
+@@||cm.g.doubleclick.net^$important
+@@||kochava.com^$app=com.cnn.mobile.android.phone
+@@||telemetry.sdk.inmobi.com^$app=flipboard.boxer.app
+@@||amazon-adsystem.com
+@@||1rx.io
+@@||contextweb.com
+@@||dotomi.com 
+@@||openx.net
+@@||a-mo.net
+! BLOCKLIST
+||ad.flipboard.com^
