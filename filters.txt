@@ -19,5 +19,6 @@
 @@||a-mo.net
 @@||criteo.com
 @@||scorecardresearch.com
+@@||insight.adsrvr.org
 ! BLOCKLIST
 ||ad.flipboard.com^
