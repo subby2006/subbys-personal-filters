@@ -1,2 +1,3 @@
-# wetrack-adguard
-a set of filters designed to allow tracking whilst still blocking ads for adguard
+# subby's personal filters
+
+my set of filtering rulesets used for different devices of mine (chromebook, phone, etc) and network filtering devices (pi-hole used at school)
