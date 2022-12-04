@@ -1,0 +1,95 @@
+[uBlock Origin]
+
+! School firewall loggers
+||ibossreporter.d211.org^
+||com-default.ws^
+||block.opendns.com^
+
+! Removes anti-adblock warning message in KissCartoon
+kimcartoon.to###adbAlert
+kimcartoon.to##.w-right
+
+! Removes ad placeholder in Forbes
+www.forbes.com##.left-rail
+
+! Removes premium upgrade button
+dochub.com###ember20 > .form-inline
+dochub.com##.no-focus-ring.btn-secondary.btn-sm.btn
+
+! Like any other anti-piracy company, ACE logs IP addreses and times of visitors viewing seized websites and sets tracking cookies.
+! To prevent this, the entire domain should be blocked
+||alliance4creativity.com^
+
+! Just cosmetic filters for KA, makes little changes in arrangements
+! rip kissanime, you will be missed :( 
+! kissanime.ru##.barContent > div > div.clear:nth-of-type(2)
+! kissanime.ru##div.clear:nth-of-type(6)
+! kissanime.ru##div.clear:nth-of-type(5)
+
+! Enables right click menu in any mp4upload embed
+mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
+
+! Logging I want
+@@||spotify.com^*/logging/
+
+! Spam404 blocks this for some reason
+! Spam404 has now been deprecated by uBlockOrigin and is no longer included in the default filters
+! The filters themselves haven't been updated since 2019
+! Personally, I wouldn't reccomend going here either way as there's a high chance of being scammed
+! ||nulled.to^$badfilter
+
+! Google Docs requests this logging api about every second, slowing down uBlock, better to just allow logging anyways
+@@||docs.google.com/*/logimpressions
+
+! A little mispelling that throws off ad-blockers far
+! Domain has been parked for a while now, not commenting it out as it can go active anytime
+! Originally intended for Spotify ad-blocking
+||doublecklick.net^
+
+! CF captcha
+@@||hcaptcha.com^
+
+! Easylist blocks all popups on the kiss sites, and this includes the video player. 
+! Whitelists for googlevideo so the player opens properly
+@@||googlevideo.com^$popup,domain=kissanime.ru
+@@||googlevideo.com^$popup,domain=kimcartoon.to
+
+
+! 4/17/2020 https://kimcartoon.to
+kimcartoon.to###subcontent > div:nth-of-type(2)
+
+! Blocks ad leftovers, along with sponsored website links
+the-qrcode-generator.com##.google-side
+the-qrcode-generator.com##.google-bottom
+the-qrcode-generator.com##md-list-item:nth-of-type(11)
+the-qrcode-generator.com##md-list-item:nth-of-type(10)
+the-qrcode-generator.com##md-list-item:nth-of-type(9)
+the-qrcode-generator.com##h2.md-default-theme.md-subheader:nth-of-type(3)
+
+! Porn ads on nyaa
+nyaa.si##.servers-cost-money2
+nyaa.si##.servers-cost-money1
+
+! Mediafire popup ads
+||otnolatrnup.com^$popup
+
+! Video ads in some .io games and tracking
+||adinplay.com^
+
+! ad fraud moment
+@@||securepubads.g.doubleclick.net/pcs/view$xhr,domain=open.spotify.com
+@@||pubads.g.doubleclick.net/pagead/interaction/*$xhr,domain=open.spotify.com
+
+! 2022-01-27 https://www.youtube.com
+youtube.com##button.ytp-button:nth-of-type(6)
+youtube.com###blocking-container
+
+! 2022-08-26 https://www.youtube.com
+www.youtube.com##ytd-download-button-renderer.ytd-menu-renderer.style-scope
+
+! 2022-11-03 https://www.youtube.com
+www.youtube.com###dislike-button
+
+! 2022-12-04 https://open.spotify.com
+open.spotify.com##.Upqw01TOXETOmR5Td7Dj.lprIeE.Button-sc-y0gtbx-0
+
